@@ -1,0 +1,93 @@
+/* this appears only if print  */
+@media  print{
+    header{
+padding:  0px ;    }
+article{
+    box-shadow: none;
+}    
+header h1{
+    font-size: 2em ;
+    }
+header h2{
+    display:none;
+}
+}
+section#carousel > figure > img {
+    display: none;
+margin: 0px auto ;
+} 
+section#carousel > figure.visible > img {
+    display: block ;
+    position: relative ;
+    overflow: hidden;
+} 
+section#carousel > figure > figcaption {
+    display: none;
+} 
+
+section#carousel > figure.visible > figcaption {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+} 
+    /* define new fonts fromm ttf files  */
+@font-face {
+    font-family: News_Cycle ;
+    src: url("../fonts/mod3_news_cycle.ttf") format('truetype');
+}
+@font-face {
+    font-family: Contail_One;
+    src: url('../fonts/mod3_contail_one.ttf') format('truetype');
+    }
+@media not print{
+    body{
+        color: #635959;
+        font-family: News_Cycle;
+        }
+    }
+@media not print{
+    header{
+background-color:#242323;
+color: #EFEFEF;
+padding: 20px 50px;
+font-family: Contail_One;
+        }
+    }
+main{
+    padding: 5px 10px ;
+}
+
+header > h1{
+    font-size: 4em;
+}
+article{
+    margin: 5px 0px ;;
+    padding: 5px 5px;
+    box-shadow: -1px -1px 6px #888888
+}
+@media NOT print{
+
+    article > h4,h3{
+        color: #8C1018
+    }
+    article > a {
+        color: #314052;
+    
+    }
+}
+main figure > figcaption::before{
+    content: 'Pictured above: ' ;
+    font-weight: bold;
+}
+@media NOT print{
+
+    main > h3 {
+        font-size: 2em;
+    }
+}
+article > time{
+    float: right;
+    font-size: 0.75em;
+    font-weight: lighter;
+}

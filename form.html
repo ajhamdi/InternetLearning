@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Introduction to forms</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+</head>
+<body>
+    <h1>advanced HTML trials (put your headsets on)</h1>
+    <hr>
+    <textarea rows="3" cols="50">
+    We live in a mobile-first and cloud-first world. Computing is ubiquitous, and experiences span devices and exhibit ambient intelligence.
+    </textarea>
+    <select>
+        <optgroup label="Data Platform">
+            <option value="DAT202x">Processing Big Data with Azure HDInsight</option>
+            <option value="DAT204x">Introduction to R Programming</option>
+        </optgroup>
+        <optgroup label="Cloud">
+            <option value="CLD203x">Office 365: Managing Identities and Services</option>
+        </optgroup>
+        <optgroup label="Development">
+            <option value="DEV208x">Introduction to jQuery</option>
+        </optgroup>
+    </select>
+    <br> <br><br>
+    <form ...>
+        <fieldset>
+        <legend>Text Data</legend>
+          First Name:<br />
+          <input type="text" name="firstName" value="" placeholder="Enter your First Name here" required="required" /><br />
+          Last Name:<br />
+          <input type="text" name="lastName" value="" placeholder="Enter your Last Name here" /><br />
+          zip-code [#####(-####)]:<br />
+          <input type="text" name="zip" value="" placeholder="Enter yourzip-code here" pattern="\d{5}(-\d{4})?" /><br />
+
+        </fieldset>
+        <fieldset>
+            <legend>Numeric Data</legend>
+          Age:<br />
+          <input type="range" name="age" min="0" max="100" value="25" /><br />
+          <br />
+          daye of birth:<br />
+          <input name="service_date" type="date" min="2000-01-01" max="2999-12-31">
+        </fieldset>
+        <fieldset>
+            <legend>Require Admin Approval</legend>
+            Yes: <input type="radio" name="approval" value="true" checked="checked" />
+            <br />
+            No: <input type="radio" name="approval" value="false" />
+        </fieldset>
+          <input type="submit" value="Click Me to Submit"  />
+        <button type="button">
+            <img src="img/microsoft.png" alt="Microsoft" />
+            <br />
+            Apply to Microsoft!
+        </button>
+        <br>
+        <svg height="200" width="200">
+            <rect rx="20" ry="20" width="200" height="100" fill="#7F26A7"/>
+        </svg>
+        <br>
+        <svg height="200" width="200">
+                <rect rx="20" ry="20" width="200" height="100" fill="#7256A7"/>
+            </svg>
+            <center>
+            <svg height="200" width="400">
+                    <rect x="100" y="50" rx="20" ry="20" width="250" height="100" fill="#1B043C" />
+                    <rect x="100" y="50" width="200" height="100" fill="#1B043C" />
+                    <circle cx="100" cy="100" r="50" fill="#472772" />
+                    <text fill="#D7BFF3" font-size="28" font-family="Segoe UI Light" x="160" y="108">Abdullah Hamdi</text>
+                </svg>
+            </center>
+      </form>
+      <br>
+      <video heigh="500" controls="control" poster="img/hulk.jpg">
+        <source src="vid/test5.mp4" type="video/mp4" />
+        Sorry your browser siesnt support mp4.
+      </video>
+      <audio   autoplay>
+            <source src="msc/background.mp3" type="audio/mp3" />
+        <audio>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* this appears only if print  */
+@media print{
+    body{
+        background-color: white;
+    }
+    }
+    /* define new fonts fromm ttf files  */
+@font-face {
+    font-family: Caveat ;
+    src: url("../fonts/mod3_caveat.ttf") format('truetype');
+}
+@font-face {
+    font-family: Chonburi;
+    src: url('fonts/mod3_chonburi.ttf') format('truetype');
+    }
+body{
+    background-color: blanchedalmond;
+    color: darkblue !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+}
+header{
+    background-color: black;
+    background: linear-gradient(#051118, rgb(65, 98, 158));
+    color: white;
+    padding: 30px 40px ;
+
+}
+section{
+    font-family: Caveat ;
+}
+header > h1{
+    letter-spacing: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+article{
+    margin: 15px;
+    padding: 10px;
+}
+article > h4{
+border: thin #CAA893 inset;
+font-weight: bolder;
+font-style: italic;
+text-align: center;
+font-family: Chonburi;
+}
+article > h4::before{
+    content: "\002329";
+    color: brown;
+    }
+article > h4::after{
+    content: "\00232A";
+    color: brown;
+    }
+article.coolborder1{
+border-color: #CAA893 ;
+border-width: 10px;
+border-style: inset;
+}
+article.coolborder2{
+    border-color: rgb(122, 106, 15) ;
+    border-width: 5px;
+    border-style: dotted dashed;
+    }
+article.coolborder3{
+    border-color: rgb(95, 11, 163) ;
+    border-width: 10px;
+    border-style: ridge double;
+    }
+summary{
+    background-color: azure;
+
+    padding: 50px 50px 
+}
+.grayBackground{
+    background-color: lightgray;
+}
+
+.tanBackground{
+    background-color: lightcyan;
+}
+.purpleBackground{
+    background-color: rgb(232, 173, 250);
+}
+section.purpleBackground{
+    font-size: 2em;
+}
+
+p.important{
+color: red;
+font-weight: lighter;
+}
+.important{
+    color: rgb(192, 0, 0);
+    font-weight: bolder;
+}

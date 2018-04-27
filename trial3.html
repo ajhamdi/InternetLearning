@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>HTML Page</title>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <style>
+            body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       
+        background-color: #506566;
+        }
+        aside {
+        background-color: #23354B;
+        color: #CDB09E;
+        padding: 25px;
+        margin: 5px;
+        }
+        nav {
+        display:flex;
+        }
+        nav > aside {
+        flex: 1;
+        }
+        /* resize the browser to observe the effect */
+        @media (max-width: 500px) {
+        nav {
+            display: block;
+        }
+        }
+
+    </style>
+</head>
+<body>
+        <nav>
+                <aside>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</aside>
+                <aside>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</aside>
+                <aside>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</aside>
+            </nav>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="basicApp">
+    <head>
+        <title>HTML Page</title>
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+        <script src="js/app1.js"></script>
+    </head>
+    <body >
+        <div ng-controller="homeController">
+          <label>Username:</label>
+          <input type="text" ng-model="uname" placeholder="Enter username" />
+          <hr />
+          <h2>Hello {{uname}}</h2>
+          <button type="button" ng-click="testMe()">Test Me</button>
+        </div>
+        <div ng-controller="listController">
+            <h1>List of Items</h1>
+            <hr />
+            <ol>
+                <li ng-repeat="item in items">
+                    {{item}}
+                </li>
+            </ol>
+            <hr />
+            <form>
+                <fieldset>
+                    <legend>Add New Item</legend>
+                    <input type="text" ng-model="newItem" placeholder="Item Text" />
+                    <button ng-click="addItem()">&#43;</button>
+                </fieldset>
+            </form>
+          </div>
+          <br> <br> <hr>
+          <div ng-controller="demoController">
+          <h1>Result of HTTP request</h1>
+          <hr />
+          <p>
+                {{resultJSON}}
+                <br />
+                <mark>{{resultProperty}}</mark>
+          </p>
+        </div>
+    </body>
+</html>

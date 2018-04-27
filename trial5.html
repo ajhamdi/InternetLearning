@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>HTML Page</title>
+        <style>
+:root {
+    font-size: 40px;
+    --blue: #0074D9;
+    --darkblue: #005FB2;
+  }
+  
+  body {
+    background: #777676;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  input[type = checkbox] {
+    display: none;
+  }
+  
+  input + label {
+    font-size: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .1rem solid var(--blue);
+    border-radius: 50%;
+    background: var(--darkblue);
+    transition: .1s all;
+    cursor: pointer;
+    z-index: 999 !important;
+  }
+  
+  input + label:hover {
+    transform: scale(.95);
+  }
+  
+  input + label:after {
+    content: "🤜";
+  }
+  
+  input:checked + label {
+    background: var(--blue);
+    transform: scale(1.1);
+  }
+  
+  input:checked + label:hover {
+    background: var(--blue);
+    transform: scale(1.05);
+  }
+  
+  input:checked + label:after {
+    content: "👍";
+  }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Text Value</legend>
+                Position: <input type="text" name="position" value="" />
+            </fieldset>
+            <fieldset>
+                <legend>Radio Value</legend>
+                <em>Department</em><br />
+                FIELD: <input type="radio" name="department" value="Field" checked="checked" /><br />
+                ITOPS: <input type="radio" name="department" value="IT Operations" /><br />
+                SALES: <input type="radio" name="department" value="Sales" /><br />
+                MGMT: <input type="radio" name="department" value="Management" />
+            </fieldset>
+            <button type="button" onclick="saveTextValue()">Save Text</button>
+            <button type="button" onclick="saveRadioValue()">Save Radio</button>
+        </form>
+        <div class="container">
+                <input id="checkbox" type="checkbox"/>
+                <label for="checkbox" ></label>
+              </div>
+        <script type="text/javascript" src="js/script2.js"></script>
+    </body>
+</html>
